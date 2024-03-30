@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("chellatamilan/pywebapp")
+        app = docker.build("monisha407/pywebapp")
     }
 
     stage('Test image') {
