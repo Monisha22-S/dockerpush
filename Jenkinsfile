@@ -8,7 +8,7 @@ node {
 
     stage('Build image') {
         /* This builds the actual image */
-        app = docker.build("chellatamilan/pywebapp1")
+        app = docker.build("monisha407/pywebapp12")
     }
 
     stage('Test image') {
@@ -31,7 +31,7 @@ node {
     stage('Inspect image') {
         /* Inspect the Docker image */
         docker.image('monisha407/pywebapp1').inside {
-            bat 'docker inspect -f . monisha407/pywebapp1'
+            bat 'docker inspect -f . monisha407/pywebapp12'
         }
     }
 }
